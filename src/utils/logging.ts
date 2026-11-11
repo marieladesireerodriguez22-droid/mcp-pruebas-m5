@@ -1,15 +1,3 @@
-// ───────────────────────────────────────────────────────────── 
-
-// Logger estructurado (Lecture 9) 
-
-// REGLA DE ORO: todo log va a STDERR. STDOUT es exclusivo del protocolo MCP. 
-
-// Ojo: console.log, console.info y console.debug escriben en STDOUT. No los uses. 
-
-// ───────────────────────────────────────────────────────────── 
-
-
-
 type Level = "debug" | "info" | "warn" | "error";
 
 const ORDER: Record<Level, number> = { debug: 10, info: 20, warn: 30, error: 40 };
