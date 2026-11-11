@@ -2,17 +2,11 @@ import { AppError } from "../errors/index.js";
 import { logger } from "./logging.js";
 
 
-
-// ───────────────────────────────────────────────────────────── 
-
-// Retry responsable con exponential backoff (Lectures 4 y 9) 
+// Retry responsable con exponential backoff 
 
 // Solo reintenta errores TRANSITORIOS (retryable: rate limit, red, 5xx). 
 
 // Nunca reintenta 401, 404, 422 ni errores de validación. 
-
-// ───────────────────────────────────────────────────────────── 
-
 
 
 export interface RetryOptions {
