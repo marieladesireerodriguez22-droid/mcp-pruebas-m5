@@ -2,14 +2,9 @@ import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import { logger } from "../utils/logging.js";
 
 
-
-// ───────────────────────────────────────────────────────────── 
-
-// Jerarquía de errores del server (Lecture 9) 
+// Jerarquía de errores del server 
 
 // Cada error dice QUÉ pasó (message) y QUÉ HACER (action + hint). 
-
-// ───────────────────────────────────────────────────────────── 
 
 
 
@@ -221,13 +216,9 @@ export class GitHubAPIError extends AppError {
 
 }
 
-
-
-// ───────────────────────────────────────────────────────────── 
+ 
 
 // Traducción: error crudo de Octokit → nuestro AppError 
-
-// ───────────────────────────────────────────────────────────── 
 
 
 
